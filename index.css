@@ -18,97 +18,163 @@ img{
 }
 
 /* 结构样式 */
-div.TOP{
+body>div{
 	width: 1000px;
 	margin: 0px auto;
 }
-section,div.TOP div{
+section,body>div div{
 	width: 100%;
 }
+
+/* 头部 */
+
 header{
 	height: 134px;
 }
-header div.header_top{
+header div:first-child{
 	height: 19px;
 	margin-bottom: 1px;
 }
-header div.header_top li{
+header div:first-child li{
 	float: left;
 	height: 19px;
 	margin-right: 20px;
 	list-style: none;
 }
-header div.header_top li:first-child{
+header div:first-child li:first-child{
 	margin-left: 10px;
 }
-header div.header_middle{
+header div.middle{
 	height: 68px;
 	margin-bottom: 1px;
 }
-header div.header_middle img{
+header div.middle img{
 	width: 630px;
 	height: 68px;
 	float: left;
 	vertical-align: top;
 }
-header div.header_middle img:first-child{
+header div.middle img:first-child{
 	width: 164px;
 	margin-right: 20px;
 }
-header div.header_middle img:last-child{
+header div.middle img:last-child{
 	width: 164px;
 	margin-left: 22px;
 }
-header div.header_bottom{
+header div:last-child{
 	height: 44px;
 	border-bottom: 1px solid #dadada;
 	position: relative;
 }
-header div.header_bottom img{
+header div:last-child img{
 	position: absolute;
 	width: 209px;
 	height: 22px;
 	top: 12px;
 	left: 5px;
 }
-header div.header_bottom p{
+header div:last-child p{
 	width: 200px;
 	margin-left: 249px;
 }
-header div.header_bottom p span{
-	margin-right: 17px;
+header div:last-child p span{
+	margin-right: 14px;
 }
-header div.header_bottom p span i{
-	margin-left: 10px;
-}
-header div.header_bottom p span:first-child{
-	cursor: pointer;
-}
-header div.header_bottom p span:last-child{
+header div:last-child p span span a{
+	display: inline-block;
+	width: 77px;
+	margin-left: 22px;
 	margin-right: 0px;
+}
+header div:last-child>p.nav_mail{
+	position: absolute;
+	width: 271px;
+	height: 26px;
+	top: 10px;
+	right: 257px;
+	margin: 0px;
+}
+header div:last-child p.nav_mail span{
+	vertical-align: top;
+	cursor: pointer;
+	margin-right: 26px;
+}
+header div:last-child p.nav_mail span:first-child{
+	width: 75px;
+	height: 26px;
+	float: left;
+	margin-right: 98px;
+}
+header div:last-child p.nav_mail span:first-child span{
+	position: absolute;
+	width: 537px;
+	height: 87px;
+	top: 35px;
+	left: -21px;
+	border:solid 1px #dbdbdb;
+	border-top: none;
+	background: #f1f1f1;
+}
+header div:last-child p.nav_mail span:last-child{
+	margin-right: 0px;
+}
+header div:last-child p.nav_mail span i{
+	float: right;
+	width: 9px;
+	height: 5px;
+	margin-top: 11px;
+	background: url(images/header/4.jpg) no-repeat;
+}
+header div form{
+	position: absolute;
+	width: 230px;
+	height: 26px;
+	right: 1px;
+	top: 10px;
+	line-height: 26px;
+}
+header div form a{
+	margin-right: 6px;
+}
+header div form input[type]{
+	width: 165px;
+	height: 12px;
+	padding: 6px 28px 6px 5px;
+	border: 1px solid #1a71b8;
+	vertical-align: top;
+}
+header div form i{
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	right: 9px;
+	top: 5px;
+	z-index: 2;
+	background: url(images/header/search_icon.png);
 }
 nav{
 	height: 280px;
 }
-nav div.nav_top{
+nav div:first-child{
 	height: 103px;
 }
-nav div.nav_middle{
+nav div.middle{
 	height: 67px;
 }
-nav div.nav_bottom{
+nav div:last-child{
 	height: 110px;
 }
 section.top_news{
 	height: 729px;
 	border-top: #83b7df 1px dotted;
 }
-section.top_news div.top_news_left{
+section.top_news div:first-child{
 	width: 345px;
 	height: 100%;
 	float: left;
 }
-section.top_news div.top_news_right{
+section.top_news div:last-child{
 	width: 655px;
 	height: 100%;
 	float: left;
@@ -166,53 +232,75 @@ footer{
 	width: 100%;
 	height: 227px;
 }
-footer section.link{
+footer section:first-child{
 	width: 100%;
 	height: 90px;
 }
-footer section.bottom{
+footer section:last-child{
 	width: 100%;
 	height: 137px;
 }
 /* 字体样式 */
 
-header.header_font{
+header a,header p{
 	font-size: 12px;
 	vertical-align: top;
+}
+header a{
 	color: #999;
 }
-header.header_font a{
-	color: #999;
-}
-header.header_font a:hover{
+header a:hover{
 	color: #ff9724;
 }
-header.header_font div:first-child{
+header p{
+	color: #1a81ce;
+}
+header p a{
+	color: #1c79be;
+	margin-right: 17px;
+}
+header div:last-child p i{
+	font-style: normal;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: top;
+}
+header div:first-child a{
 	line-height: 19px;	
 }
-header.header_font div:last-child p{
-	line-height: 43px;
+header div:last-child p{
+	line-height: 45px;
 }
-p.company_name_font{
-	color: #1f7bbe;
+header div:last-child p span span a{
+	color: #71869e;
+	line-height: 27px;
 }
-span#homepage:hover{
+header div:last-child p.nav_mail span{
+	line-height: 24px;
+}
+header div:last-child p.nav_mail span:hover{
 	color: #ff9724;
 }
-i#shares{
-	font-weight: bold;
-	font-style: normal;
+header div form a{
+	color: #1d76ba;
+	font-size: 12px;
+	line-height: 26px;
+	vertical-align: top;
 }
 /* 背景样式 */
-div.TOP header div:first-child{
+header div:first-child{
 	background: #f1f1f1;
 }
-div.TOP header div:last-child{
+header div:last-child{
 	background: #f1f1f1;
+}
+header div:last-child p:last-child span{
+	line-height: 24px;
+	color: #6f86af;
 }
 
 /* 动画样式 */
-header div.header_bottom p.anime{
+header div p.anime{
 	opacity: 0;
 	animation: myopacity 1.5s infinite;
 }

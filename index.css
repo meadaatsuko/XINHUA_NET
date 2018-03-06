@@ -62,7 +62,7 @@ header div.middle img:last-child{
 	width: 164px;
 	margin-left: 22px;
 }
-header div:last-child{
+header>div:last-child{
 	height: 44px;
 	border-bottom: 1px solid #dadada;
 	position: relative;
@@ -81,13 +81,7 @@ header div:last-child p{
 header div:last-child p span{
 	margin-right: 14px;
 }
-header div:last-child p span span a{
-	display: inline-block;
-	width: 77px;
-	margin-left: 22px;
-	margin-right: 0px;
-}
-header div:last-child>p.nav_mail{
+header div:last-child>div{
 	position: absolute;
 	width: 271px;
 	height: 26px;
@@ -95,31 +89,16 @@ header div:last-child>p.nav_mail{
 	right: 257px;
 	margin: 0px;
 }
-header div:last-child p.nav_mail span{
-	vertical-align: top;
-	cursor: pointer;
-	margin-right: 26px;
-}
-header div:last-child p.nav_mail span:first-child{
+header div:last-child div div:first-child{
 	width: 75px;
 	height: 26px;
 	float: left;
 	margin-right: 98px;
 }
-header div:last-child p.nav_mail span:first-child span{
-	position: absolute;
-	width: 537px;
-	height: 87px;
-	top: 35px;
-	left: -21px;
-	border:solid 1px #dbdbdb;
-	border-top: none;
-	background: #f1f1f1;
-}
-header div:last-child p.nav_mail span:last-child{
+header div:last-child div span:last-child{
 	margin-right: 0px;
 }
-header div:last-child p.nav_mail span i{
+header div:last-child div i{
 	float: right;
 	width: 9px;
 	height: 5px;
@@ -265,20 +244,36 @@ header div:last-child p i{
 	font-weight: bold;
 	vertical-align: top;
 }
+header p{
+	color: #1c79be;
+}
+header p a{
+	color: #1c79be;
+	margin-right: 17px;
+}
+header div:last-child p span i{
+	font-style: normal;
+	font-size: 14px;
+	font-weight: bold;
+}
+header a:hover{
+	color: #ff9724;
+}
 header div:first-child a{
 	line-height: 19px;	
 }
 header div:last-child p{
 	line-height: 45px;
 }
-header div:last-child p span span a{
+header div:last-child div span{
 	color: #71869e;
-	line-height: 27px;
+	line-height: 26px;
+	font-size: 12px;
 }
-header div:last-child p.nav_mail span{
+header div:last-child div.nav_mail span{
 	line-height: 24px;
 }
-header div:last-child p.nav_mail span:hover{
+header div:last-child div.nav_mail span:hover{
 	color: #ff9724;
 }
 header div form a{
